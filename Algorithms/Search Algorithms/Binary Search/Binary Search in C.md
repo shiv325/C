@@ -19,6 +19,10 @@
         return -1;
     }
 
+Condition to Perform :
+  - Array should be sorted in Ascending Order.
+> Note : To perform binary search on array in Descending Order, make the desired changes
+
 Parameters :
   - Integer Array
   - Size
