@@ -4,24 +4,26 @@
 
 #include <stdio.h>
 
+// Note : Use this binary search only when the array is sorted in ascending order. For descending order, make the desired changes.
+
 // Define function to perform Binary Search
-int binarySearch (int arr[], int size, int target) {
-    int low = 0;
-    int mid;
-    int high = size - 1;
-    while (low <= high) {
-        mid = (low + high) / 2;
-        if (arr[mid] == target) {
-            return mid;
+int binarySearch (int arr[], int size, int target) {             // Parameters -> Integer Array, Integer Array Size, Integer Target
+    int low = 0;                                              // Initialize low = 0 i.e. first index
+    int mid;                                                  // Declare mid
+    int high = size - 1;                                      // Initialize high = (size - 1) i.e. last index
+    while (low <= high) {                                        // while loop iterates as long as : low <= high i.e. low must not exceed high
+        mid = (low + high) / 2;                                // Find mid value of indexes 'low' & 'high' in the array from low to high
+        if (arr[mid] == target) {                                // Check if the value stored at index 'mid' == target
+            return mid;                                          // Return 'mid' if target is found
         }
-        else if (arr[mid] < target) {
-            low = mid + 1;
+        else if (arr[mid] < target) {                            // Check if value stored at index 'mid' < target
+            low = mid + 1;                                       // Assign low = (mid + 1) as the target may be present on the right side of array
         }
-        else {
-            high = mid - 1;
+        else {                                                 // Check if value stored at index 'mid' > target
+            high = mid - 1;                                    // Assign low = (mid + 1) as the target may be present on the left side of array
         }
     }
-    return -1;
+    return -1;                                            // If the target value is not found, return -1
 }
 
 // Main Function
@@ -40,7 +42,7 @@ int main () {
     }
     printf("\nEnter the element to search => ");
     scanf("%d", &target);                                              // Take user input for the target element to search in the array
-    searchIndex = linearSearch(array, N, target);                      // Function Call linearSearch to search for target in the array
+    searchIndex = binarySearch(array, N, target);                      // Function Call binarySearch to search for target in the array
     if (searchIndex < 0) {
         printf("Element not found");                                    // If search is not successful, it prints "Element not found"
     }
