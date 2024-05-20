@@ -30,7 +30,7 @@ int main () {
     }
     printf("Original Array => ");
     for (int i = 0; i < N; i++) {
-        printf("%d ", array[i]);                                      // Use for loop to pr/int the original array
+        printf("%d ", array[i]);                                      // Use for loop to print the original array
     }
     insertionSort(array, N);                                      // Function Call insertionSort to sort the array
     printf("\nSorted Array => ");
