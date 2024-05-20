@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 // Define function to divide the array into subarrays
-int mergeSort (int arr[], int low, int high) {                // Parameters -> Int Array, Int low, Int high
+void mergeSort (int arr[], int low, int high) {                // Parameters -> Int Array, Int low, Int high
     if (low < high) {                                            // If low < high
         int mid = (low + high) / 2;                              // Find mid index
         mergeSort (arr, low, mid);                                   // Recursively Divide the original array into left subarray
