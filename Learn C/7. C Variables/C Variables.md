@@ -5,13 +5,16 @@ Variables are named memory locations which can store data/value.
 ## Types of Variables
 
 1. `int` : Integer
-    Examples => 1, -1, 0, 34, -92, etc.
 
-2. `float` : Floating Point Numbers with Decimal
-    Examples => 1.0, 0.0, 5.9, -3.9, etc.
+   Examples => 1, -1, 0, 34, -92, etc.
 
-3. `char` : Single Character enclosed by single quotes `''`
-    Examples => 'a', 'B', '1', '[', ','
+3. `float` : Floating Point Numbers with Decimal
+
+   Examples => 1.0, 0.0, 5.9, -3.9, etc.
+
+5. `char` : Single Character enclosed by single quotes `''`
+
+   Examples => 'a', 'B', '1', '[', ','
 
 > _Note_ : There are more types but we will consider only these for now.
 
