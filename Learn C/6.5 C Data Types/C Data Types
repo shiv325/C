@@ -1,0 +1,12 @@
+# Data Types
+
+- Specifies the type and size of data a variable stores
+
+# Data Types in C
+
+| Data Type |  Size  |                       Description                     | Examples |
+| --------- | ------ | ----------------------------------------------------- | -------- |
+|    int    | 2 or 4 |                        Integers                       | 0, 1, -2, etc.
+|   float   |   4    | Floating Point Numbers with atmost 6-7 decimal digits |               1.92, 0.0, -3.0, etc. |
+|   double  |   8    | Floating Point Numbers with atmost 15 decimal digits  |  4.12487149814019012213, -5.1321123956098158, etc.  |
+|   char    |   1    |    Single Character / Number / Symbol / ASCII Value   | 'a'-'z', 'A'-'Z', '0'-'9', '"', '#', '.', '*', etc. |
